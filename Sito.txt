@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enterprise Website</title>
+    <style>
+        /* Reset and basic styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #004080;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        /* Main content area */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .intro {
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .intro h2 {
+            color: #003366;
+            margin-bottom: 15px;
+        }
+        .intro p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        /* Features section */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .features .feature {
+            background-color: white;
+            width: 30%;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .features .feature h3 {
+            color: #003366;
+            margin-bottom: 10px;
+        }
+        .features .feature p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Footer section */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .modal-content {
+            background-color: black;
+            padding: 30px;
+            font-size: 2rem;
+        }
+        .close-btn {
+            color: #0073e6;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .features .feature {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Enterprise Solutions</h1>
+        <p>Optimizing Your Business with Cutting-Edge Technologies</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id="aboutUsLink">About Us</a></li> <!-- Link aggiornato -->
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Welcome to Enterprise Solutions</h2>
+            <p>At Enterprise Solutions, we specialize in providing cutting-edge technology to businesses of all sizes. Our mission is to help your company streamline operations, improve efficiency, and stay ahead of the competition.</p>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Innovative Technology</h3>
+                <p>We offer state-of-the-art solutions that keep your business on the edge of technological advancements.</p>
+            </div>
+            <div class="feature">
+                <h3>Expert Support</h3>
+                <p>Our team of experts is available 24/7 to assist with any technical issues and ensure smooth operations.</p>
+            </div>
+            <div class="feature">
+                <h3>Scalable Solutions</h3>
+                <p>We provide solutions that grow with your business, offering scalability and flexibility to meet your evolving needs.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal for "About Us" -->
+    <div id="aboutUsModal" class="modal">
+        <div class="modal-content">
+            <p>Ciao</p>
+            <span class="close-btn" id="closeModal">Back to Home</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Enterprise Solutions. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Get modal and close button
+        const modal = document.getElementById('aboutUsModal');
+        const closeModal = document.getElementById('closeModal');
+        const aboutUsLink = document.getElementById('aboutUsLink');
+
+        // When the user clicks on the "About Us" link, show the modal
+        aboutUsLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            modal.style.display = 'flex';
+        });
+
+        // When the user clicks on "Back to Home", close the modal
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Close the modal if the user clicks outside of the modal content
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
