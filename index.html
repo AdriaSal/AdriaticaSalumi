@@ -173,7 +173,7 @@
 
     <header>
         <h1>Adriatica Salumi Srl</h1>
-        <p>Produzione e vendita salumi artigianali di alta qualità</p>
+        <p>Lavorazioni di alta qualità</p>
     </header>
 
     <nav>
@@ -181,20 +181,20 @@
             <li><a href="#">Home</a></li>
             <li><a href="#" id="aboutUsLink">About Us</a></li>
             <li><a href="#">Servizi</a></li>
-            <li><a href="#">Contatti</a></li>
+            <li><a href="#" id="contactLink">Contatti</a></li> <!-- Link per il contatto -->
         </ul>
     </nav>
 
     <div class="container">
         <section class="intro">
             <h2>Benvenuti in Adriatica Salumi Srl</h2>
-            <p>Adriatica Salumi Srl è un'azienda che produce e vende salumi artigianali di alta qualità. Situati a Sant'Egidio alla Vibrata (TE), offriamo una vasta gamma di prodotti tipici.</p>
+            <p>Adriatica Salumi Srl è un'azienda che produce e vende prodotti artigianali di alta qualità. Situati a Sant'Egidio alla Vibrata (TE), offriamo una vasta gamma di prodotti tipici.</p>
         </section>
 
         <div class="features">
             <div class="feature">
-                <h3>Salumi di Alta Qualità</h3>
-                <p>Produciamo salumi freschi e stagionati, tutti realizzati con ingredienti selezionati.</p>
+                <h3>Produzione di Alta Qualità</h3>
+                <p>Lavoriamo carni fresche 100% Italiane.</p>
             </div>
             <div class="feature">
                 <h3>Artigianalità</h3>
@@ -215,31 +215,62 @@
         </div>
     </div>
 
+    <!-- Modal for "Contact" -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <h3>Contatti</h3>
+            <p><strong>Indirizzo:</strong> VIA PASCAL 16, 64016 Sant'Egidio alla Vibrata (TE)</p>
+            <p><strong>Telefono:</strong> +39 1234567890</p>
+            <p><strong>Email:</strong> <a href="mailto:info@adriasal.it">info@adriasal.it</a></p>
+            <p><strong>PEC:</strong> <a href="mailto:adriasal@pec.it">adriasal@pec.it</a></p>
+            <span class="close-btn" id="closeContactModal">Back to Home</span>
+        </div>
+    </div>
+
     <footer>
         <p>Adriatica Salumi srl P.IVA 00723510673</p>
     </footer>
 
     <script>
-        // Get modal and close button
-        const modal = document.getElementById('aboutUsModal');
+        // Get modal and close button for "About Us"
+        const aboutUsModal = document.getElementById('aboutUsModal');
         const closeModal = document.getElementById('closeModal');
         const aboutUsLink = document.getElementById('aboutUsLink');
+
+        // Get modal and close button for "Contact"
+        const contactModal = document.getElementById('contactModal');
+        const closeContactModal = document.getElementById('closeContactModal');
+        const contactLink = document.getElementById('contactLink');
 
         // When the user clicks on the "About Us" link, show the modal
         aboutUsLink.addEventListener('click', function(event) {
             event.preventDefault();
-            modal.style.display = 'flex';
+            aboutUsModal.style.display = 'flex';
         });
 
-        // When the user clicks on "Back to Home", close the modal
+        // When the user clicks on "Back to Home" in "About Us", close the modal
         closeModal.addEventListener('click', function() {
-            modal.style.display = 'none';
+            aboutUsModal.style.display = 'none';
+        });
+
+        // When the user clicks on the "Contact" link, show the contact modal
+        contactLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            contactModal.style.display = 'flex';
+        });
+
+        // When the user clicks on "Back to Home" in "Contact", close the modal
+        closeContactModal.addEventListener('click', function() {
+            contactModal.style.display = 'none';
         });
 
         // Close the modal if the user clicks outside of the modal content
         window.addEventListener('click', function(event) {
-            if (event.target === modal) {
-                modal.style.display = 'none';
+            if (event.target === aboutUsModal) {
+                aboutUsModal.style.display = 'none';
+            }
+            if (event.target === contactModal) {
+                contactModal.style.display = 'none';
             }
         });
     </script>
