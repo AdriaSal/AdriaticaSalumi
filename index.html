@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adriatica Salumi</title>
+    <meta name="description" content="Adriatica Salumi Srl - Prodotti salumi di alta qualità, provenienti da Sant'Egidio alla Vibrata (TE). Scopri la nostra azienda e i nostri prodotti.">
+    <title>Adriatica Salumi - Salumi di qualità | Sant'Egidio alla Vibrata</title>
+    
+    <!-- Schema.org for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Adriatica Salumi Srl",
+        "url": "https://www.adriasal.it",
+        "logo": "https://www.adriasal.it/logo.png", 
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+39 1234567890",
+            "contactType": "Customer Service",
+            "areaServed": "IT",
+            "availableLanguage": "Italian"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "VIA PASCAL 16",
+            "addressLocality": "Sant'Egidio alla Vibrata",
+            "postalCode": "64016",
+            "addressCountry": "IT"
+        },
+        "sameAs": [
+            "https://www.facebook.com/AdriaticaSalumi",
+            "https://www.instagram.com/AdriaticaSalumi"
+        ]
+    }
+    </script>
+
     <style>
         /* Reset and basic styles */
         body, h1, h2, h3, p, ul, li {
@@ -145,21 +176,39 @@
 <body>
 
     <header>
-        <h1>Adriatica Salumi srl</h1>
-        <p>Building Website ...</p>
+        <h1>Adriatica Salumi Srl</h1>
+        <p>Produzione e vendita salumi artigianali di alta qualità</p>
     </header>
 
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#" id="aboutUsLink">About Us</a></li> <!-- Link aggiornato -->
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="aboutUsLink">About Us</a></li>
+            <li><a href="#">Servizi</a></li>
+            <li><a href="#">Contatti</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        
+        <section class="intro">
+            <h2>Benvenuti in Adriatica Salumi Srl</h2>
+            <p>Adriatica Salumi Srl è un'azienda che produce e vende salumi artigianali di alta qualità. Situati a Sant'Egidio alla Vibrata (TE), offriamo una vasta gamma di prodotti tipici.</p>
+        </section>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Salumi di Alta Qualità</h3>
+                <p>Produciamo salumi freschi e stagionati, tutti realizzati con ingredienti selezionati.</p>
+            </div>
+            <div class="feature">
+                <h3>Artigianalità</h3>
+                <p>Ogni prodotto è preparato secondo le tradizioni locali, mantenendo il sapore autentico.</p>
+            </div>
+            <div class="feature">
+                <h3>Servizio Clienti</h3>
+                <p>Offriamo un servizio clienti dedicato per soddisfare ogni vostra esigenza.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Modal for "About Us" -->
