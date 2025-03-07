@@ -1,5 +1,5 @@
 Benvenuti nel mondo di Adriatica Salumi, un'azienda che porta avanti la tradizione dei prodotti di carne di suino 100% italiani, situata nel cuore dell'Abruzzo.
-La nostra missione è prodotti altissima qualità, mantenendo vivi i valori artigianali che da sempre contraddistinguono la nostra regione.
+La nostra missione mira alla lavorazione di prodotti altissima qualità, mantenendo vivi i valori artigianali che da sempre contraddistinguono la nostra regione.
 
 👀 Chi siamo:
 Adriatica Salumi è un'azienda che si distingue per l'attenzione meticolosa alla qualità e freschezza del prodotto. 
