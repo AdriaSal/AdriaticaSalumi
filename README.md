@@ -24,7 +24,7 @@ Attenzione maniacale: Ogni fase della lavorazione è realizzata con un'attenzion
 
 📞 Come Contattarci: 
 Per maggiori informazioni sui nostri prodotti o per scoprire di più sulla nostra azienda, puoi contattarci ai seguenti recapiti:
-Email: info@adriaticalaumi.it 
+Email: info@adriasal.it 
 Telefono: 0861 842494 Indirizzo: Via Pascal, 16 Sant'Egidio alla Vibrata (TE) - 64016 Abruzzo, Italia 
 
 🏅 Il Nostro Impegno: 
