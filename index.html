@@ -3,277 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Adriatica Salumi Srl - Lavorazioni suino di alta qualità, Sant'Egidio alla Vibrata (TE). Scopri la nostra azienda e i nostri prodotti.">
-    <title>Adriatica Salumi - Lavorazioni di qualità | Sant'Egidio alla Vibrata</title>
-    
-    <!-- Schema.org for Google -->
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "name": "Adriatica Salumi Srl",
-        "url": "https://www.adriasal.it",
-        "logo": "https://www.adriasal.it/logo.png", 
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+39 1234567890",
-            "contactType": "Customer Service",
-            "areaServed": "IT",
-            "availableLanguage": "Italian"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "VIA PASCAL 16",
-            "addressLocality": "Sant'Egidio alla Vibrata",
-            "postalCode": "64016",
-            "addressCountry": "IT"
-        }
-    }
-    </script>
-
-    <style>
-        /* Reset and basic styles */
-        body, h1, h2, h3, p, ul, li {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        a {
-            text-decoration: none;
-            color: #0073e6;
-        }
-
-        /* Header styles */
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Navigation bar */
-        nav {
-            background-color: #004080;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style: none;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            font-size: 1.1rem;
-        }
-
-        /* Main content area */
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-        .intro {
-            background-color: white;
-            padding: 30px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-        .intro h2 {
-            color: #003366;
-            margin-bottom: 15px;
-        }
-        .intro p {
-            font-size: 1.1rem;
-            color: #666;
-        }
-
-        /* Features section */
-        .features {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-        .features .feature {
-            background-color: white;
-            width: 30%;
-            padding: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .features .feature h3 {
-            color: #003366;
-            margin-bottom: 10px;
-        }
-        .features .feature p {
-            font-size: 1rem;
-            color: #666;
-        }
-
-        /* Footer section */
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 40px;
-        }
-
-        /* Modal styles */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        .modal-content {
-            background-color: black;
-            padding: 30px;
-            font-size: 2rem;
-        }
-        .close-btn {
-            color: #0073e6;
-            font-size: 1.2rem;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            .features {
-                flex-direction: column;
-                align-items: center;
-            }
-            .features .feature {
-                width: 80%;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+    <meta name="description" content="Adriatica Salumi: eccellenza abruzzese nelle lavorazioni di carni suine dal 1992. Salsicce, spiedoni e rollè lavorati artigianalmente con suini 100% italiani.">
+    <meta name="keywords" content="Adriatica Salumi, carni suine, prodotti artigianali, Abruzzo, salsicce, spiedoni, rollè, carne italiana, qualità, tradizione">
+    <meta name="author" content="Adriatica Salumi srl">
+    <title>Adriatica Salumi - Eccellenza Abruzzese dal 1992</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>Adriatica Salumi Srl</h1>
-        <p>Lavorazioni di alta qualità</p>
+        <div class="header-bg">
+            <video autoplay muted loop>
+                <source src="vid/abruzzoMed.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="header-content">
+            <h1>Adriatica Salumi</h1>
+            <p>L'eccellenza abruzzese nella lavorazione di carni suine dal 1992</p>
+        </div>
     </header>
+    
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" id="aboutUsLink">About Us</a></li>
-            <li><a href="#">Servizi</a></li>
-            <li><a href="#" id="contactLink">Contatti</a></li> <!-- Link per il contatto -->
-        </ul>
-    </nav>
 
     <div class="container">
-        <section class="intro">
-            <h2>Benvenuti in Adriatica Salumi Srl</h2>
-            <p>Adriatica Salumi Srl è un'azienda che produce e vende prodotti artigianali di alta qualità. Situati a Sant'Egidio alla Vibrata (TE), offriamo una vasta gamma di prodotti tipici.</p>
-        </section>
+        <main class="main-content">
+            <h2>La Nostra Storia</h2>
+            <p>Fondata nel 1992, Adriatica Salumi affonda le sue radici in una tradizione familiare che si tramanda da generazioni nel settore delle lavorazioni di carni suine. Situata nel cuore dell'Abruzzo, la nostra azienda coniuga sapientemente le forti tradizioni regionali con uno sguardo costante all'innovazione.</p>
+            
+            <p>La nostra filosofia è semplice ma potente: per ottenere un prodotto finale genuino e di alta qualità, è fondamentale partire da una materia prima eccellente. Per questo motivo, lavoriamo esclusivamente con carni provenienti da suini 100% italiani, garantendo tracciabilità, qualità e rispetto per le tradizioni gastronomiche del nostro territorio.</p>
 
-        <div class="features">
             <div class="feature">
-                <h3>Produzione di Alta Qualità</h3>
-                <p>Lavoriamo carni fresche 100% Italiane.</p>
+                <img src="/api/placeholder/100/100" alt="Suino italiano">
+                <div>
+                    <h3>100% Suino Italiano</h3>
+                    <p>La nostra promessa di qualità inizia dalla scelta: utilizziamo esclusivamente carni selezionate da suini allevati in Italia, garantendo tracciabilità completa e massima qualità in ogni prodotto.</p>
+                </div>
             </div>
-            <div class="feature">
-                <h3>Artigianalità</h3>
-                <p>Ogni prodotto è preparato secondo le tradizioni locali, mantenendo il sapore autentico.</p>
-            </div>
-            <div class="feature">
-                <h3>Servizio Clienti</h3>
-                <p>Offriamo un servizio clienti dedicato per soddisfare ogni vostra esigenza.</p>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal for "About Us" -->
-    <div id="aboutUsModal" class="modal">
-        <div class="modal-content">
-            <p>Il sito è ancora in fase di sviluppo</p>
-            <span class="close-btn" id="closeModal">Back to Home</span>
-        </div>
-    </div>
+            <div class="feature">
+                <img src="/api/placeholder/100/100" alt="Icona no OGM">
+                <div>
+                    <h3>Certificazione NON OGM</h3>
+                    <p>Crediamo in un futuro sostenibile: i nostri suini sono alimentati esclusivamente con mangimi certificati non OGM, per offrirti prodotti genuini e rispettosi dell'ambiente.</p>
+                </div>
+            </div>
 
-    <!-- Modal for "Contact" -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <h3>Contatti</h3>
-            <p><strong>Indirizzo:</strong> VIA PASCAL 16, 64016 Sant'Egidio alla Vibrata (TE)</p>
-            <p><strong>Telefono:</strong> +39 1234567890</p>
-            <p><strong>Email:</strong> <a href="mailto:info@adriasal.it">info@adriasal.it</a></p>
-            <p><strong>PEC:</strong> <a href="mailto:adriasal@pec.it">adriasal@pec.it</a></p>
-            <span class="close-btn" id="closeContactModal">Back to Home</span>
-        </div>
+            <div class="feature">
+                <img src="/api/placeholder/100/100" alt="Icona tradizione">
+                <div>
+                    <h3>Tradizione e Innovazione</h3>
+                    <p>Rispettiamo profondamente la tradizione abruzzese nella lavorazione delle carni, ma siamo sempre alla ricerca di nuove tecniche e prodotti per soddisfare i gusti in evoluzione dei nostri clienti, mantenendo sempre intatta la qualità.</p>
+                </div>
+            </div>
+
+            <div class="product-section">
+                <h2>I Nostri Prodotti</h2>
+                <p>Preferiamo concentrarci su una gamma selezionata di prodotti, lavorati con la massima cura e nel pieno rispetto della materia prima. Ogni creazione è il risultato di un processo attento che valorizza la tradizione abruzzese.</p>
+                
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="/api/placeholder/100/100" alt="Salsiccia Classica">
+                        <h4>Salsiccia Classica</h4>
+                        <p>Preparata secondo la tradizione abruzzese con carni di prima scelta e spezie selezionate.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/100/100" alt="Salsiccia Sale e Pepe">
+                        <h4>Salsiccia Sale e Pepe</h4>
+                        <p>Una variante saporita con speziatura semplice ma d'effetto, perfetta per chi ama i sapori autentici.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/100/100" alt="Spiedone">
+                        <h4>Spiedone</h4>
+                        <p>Tagliato e preparato a mano, con carne selezionata e ingredienti freschi, ideale per le grigliate.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/100/100" alt="Rollè">
+                        <h4>Rollè</h4>
+                        <p>Arrotolato con cura e aromatizzato con erbe dell'Abruzzo, un classico della tradizione locale.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="contact-section">
+            <h2>Contattaci</h2>
+            <p>Per scoprire i nostri prodotti puoi contattarci liberamente, saremo lieti di fornirti tutte le informazioni necessarie sulla nostra selezione di carni di qualità.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Nome e Cognome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Telefono">
+                <textarea placeholder="Il tuo messaggio" rows="5" required></textarea>
+                <button type="submit">Invia Messaggio</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Dove Trovarci</h3>
+                <div class="contact-card">
+                    <p>📍 VIA PASCAL 16<br>
+                       64016 Sant'Egidio alla Vibrata (TE)</p>
+                </div>
+                <div class="contact-card">
+                    <p>📞 Tel: 0861 842494<br>
+                       📧 info@adriasal.it</p>
+                </div>
+                <div class="contact-card">
+                    <p>🕒 Lun-Ven: 8:30-18:00<br>
+                       Sab: 8:30-12:30</p>
+                </div>
+            </div>
+        </aside>
     </div>
 
     <footer>
-        <p>Adriatica Salumi srl P.IVA 00723510673</p>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-col">
+                    <h3>Chi Siamo</h3>
+                    <p>Dal 1992, Adriatica Salumi rappresenta l'eccellenza abruzzese nella lavorazione di carni suine di alta qualità, combinando tradizione e innovazione.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contatti</h3>
+                    <p>VIA PASCAL 16<br>
+                       64016 Sant'Egidio alla Vibrata (TE)<br>
+                       Tel: 0861 842494<br>
+                       Email: info@adriasal.it<br>
+                       PEC: adriasal@pec.it</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Orari</h3>
+                    <p>Lunedì - Venerdì: 8:30 - 18:00<br>
+                       Sabato: 8:30 - 12:30<br>
+                       Domenica: Chiuso</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Adriatica Salumi srl - P.IVA 00723510673 - Tutti i diritti riservati</p>
+            </div>
+        </div>
     </footer>
 
     <script>
-        // Get modal and close button for "About Us"
-        const aboutUsModal = document.getElementById('aboutUsModal');
-        const closeModal = document.getElementById('closeModal');
-        const aboutUsLink = document.getElementById('aboutUsLink');
-
-        // Get modal and close button for "Contact"
-        const contactModal = document.getElementById('contactModal');
-        const closeContactModal = document.getElementById('closeContactModal');
-        const contactLink = document.getElementById('contactLink');
-
-        // When the user clicks on the "About Us" link, show the modal
-        aboutUsLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            aboutUsModal.style.display = 'flex';
+        // Funzione per impostare lo sfondo dell'header quando l'immagine sarà disponibile
+        document.addEventListener('DOMContentLoaded', function() {
+            // Qui puoi aggiungere codice JavaScript per gestire l'immagine dell'header
+            // Per esempio:
+            // const headerBg = document.querySelector('.header-bg');
+            // headerBg.style.backgroundImage = 'url("path/to/your/image.png")';
         });
 
-        // When the user clicks on "Back to Home" in "About Us", close the modal
-        closeModal.addEventListener('click', function() {
-            aboutUsModal.style.display = 'none';
-        });
-
-        // When the user clicks on the "Contact" link, show the contact modal
-        contactLink.addEventListener('click', function(event) {
-            event.preventDefault();
-            contactModal.style.display = 'flex';
-        });
-
-        // When the user clicks on "Back to Home" in "Contact", close the modal
-        closeContactModal.addEventListener('click', function() {
-            contactModal.style.display = 'none';
-        });
-
-        // Close the modal if the user clicks outside of the modal content
-        window.addEventListener('click', function(event) {
-            if (event.target === aboutUsModal) {
-                aboutUsModal.style.display = 'none';
-            }
-            if (event.target === contactModal) {
-                contactModal.style.display = 'none';
-            }
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ritardo di 1 secondo prima di mostrare la linea
+            setTimeout(function() {
+                document.querySelector('p').classList.add('line-appear');
+            }, 500);
         });
     </script>
-
 </body>
 </html>
